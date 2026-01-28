@@ -1,5 +1,6 @@
 # ✨ Image Editor 1.0.0
-<img width="906" height="673" alt="image" src="https://github.com/user-attachments/assets/2837c5f9-2020-4565-9bd4-08095ab2e036" />
+
+<img width="889" height="546" alt="image" src="https://github.com/user-attachments/assets/12d5d63d-9658-4e61-8cba-ad62118d7147" />
 
 
 A modern **WPF-based image editing application** with a sleek dark theme, designed for quick image annotations and edits.
