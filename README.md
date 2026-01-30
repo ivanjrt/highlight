@@ -1,13 +1,13 @@
-# ✨ Image Editor 1.0.0
+# ✨ Image Editor 1.0.1
 
 <img width="902" height="675" alt="image" src="https://github.com/user-attachments/assets/00b6487d-2b4e-4d7c-b5df-ce6db0565901" />
 
 
 
-A Simple modern **WPF-based image editing application** with a sleek dark theme, designed for quick image annotations and edits, 
-without having to save Personal information directly to the computer, just manipulating the clipboard or already saved files
+A simple modern **WPF-based image editing application** with a sleek dark theme, designed for quick image annotations and edits,
+without having to save personal information directly to the computer - just manipulate the clipboard or already saved files.
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Version](https://img.shields.io/badge/version-1.0.1-blue)
 ![Framework](https://img.shields.io/badge/.NET-4.0-purple)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgrey)
 
@@ -23,11 +23,30 @@ without having to save Personal information directly to the computer, just manip
 - **⭕ Circle/Ellipse** - Draw circular or elliptical shapes
 - **⬜ Rectangle** - Draw rectangular shapes
 - **➡️ Arrow** - Draw arrows with arrowheads
-- **✏️ Text** - Add text annotations directly on the canvas
+- **✏️ Text** - Add text annotations directly on the canvas (click and type!)
+
+### ⌨️ Keyboard Shortcuts
+- **Ctrl+C** - Copy image to clipboard
+- **Ctrl+V** - Paste from clipboard
+- **Ctrl+Z** - Undo last action
+- **Escape** - Cancel text input
+
+### 🖱️ Right-Click Menu
+- Quick access to Copy, Paste, Undo, and Clear All
+- Appears when right-clicking on the canvas
+
+### ❓ Help Dialog
+- Complete keyboard shortcuts reference
+- Tool descriptions and what settings apply to each
+- Quick start guide for new users
+- Tips and tricks
 
 ### ⚙️ Customization
-- **🎨 Color Picker** - Choose from 8 colors (Black, Red, Blue, Green, Yellow, Orange, Purple, White)
-- **📏 Size Slider** - Adjust stroke thickness (1-10)
+- **🎨 Color Picker** - 8 colors (Black, Red, Blue, Green, Yellow, Orange, Purple, White)
+- **📏 Size Slider** - Adjustable stroke thickness (1-10)
+
+   **Applies to:** Highlight, Circle, Rectangle, Arrow, Text
+   **Does not apply to:** Blur (uses fixed pixelation strength)
 
 ### 🔧 Canvas Controls
 - **🔍 Fit to Screen** - Automatically scale image to fit the viewport
@@ -43,12 +62,14 @@ without having to save Personal information directly to the computer, just manip
 - .NET Framework 4.0 or higher
 
 ### How to Use
-1. **Open an image** - Click "📁 Upload" or "📋 Paste"
-2. **Select a tool** - Click any drawing tool button
+1. **Open an image** - Click "📁 Upload" or "📋 Paste" (or Ctrl+V)
+2. **Select a tool** - Click any drawing tool button (highlighted when active)
 3. **Draw on the canvas** - Click and drag to create shapes
 4. **Customize** - Adjust color and size before drawing
-5. **Export** - Click "📤 Copy" to copy to clipboard
-6. **Undo mistakes** - Click "↩️ Undo" to remove last action
+5. **Text input** - Click Text tool, click on canvas, type, press Enter
+6. **Export** - Click "📤 Copy" or press Ctrl+C
+7. **Undo** - Click "↩️ Undo", press Ctrl+Z, or right-click canvas
+8. **Get help** - Click "❓ Help" button for shortcuts and tips
 
 ## 💻 Technical Details
 
@@ -71,6 +92,11 @@ Highlight/
 │   ├── RectangleShape.cs     # Rectangle shapes
 │   ├── ArrowShape.cs         # Arrow shapes
 │   └── TextShape.cs          # Text annotations
+├── Views/
+│   ├── TextDialog.xaml       # Text input dialog (legacy)
+│   ├── TextDialog.xaml.cs
+│   ├── HelpDialog.xaml       # Help dialog
+│   └── HelpDialog.xaml.cs
 └── Converters/
     └── EnumToBooleanConverter.cs  # Data binding converters
 ```
@@ -78,20 +104,22 @@ Highlight/
 ## 🎨 UI Features
 
 - ✨ Modern dark theme (#1E1E1E background)
-- 🎯 Emoji-enhanced button labels
-- 🖱️ Smooth hover effects
-- 📍 Active tool highlighting (steel blue)
-- 📱 Responsive layout with two-row toolbar
+- 🎯 Emoji-enhanced button labels for quick recognition
+- 🖱️ Smooth hover effects with rounded corners
+- 📍 Active tool highlighting (steel blue, 70-130-180 RGB)
+- 📱 Responsive two-row toolbar layout
+- 🖱️ Right-click context menu for quick actions
+- ⌨️ Full keyboard shortcut support
 
 ## 🔜 Future Enhancements (Optional)
 
-- Undo/Redo history (multiple levels)
-- Save image to file
-- Move/resize existing shapes
-- Zoom and pan controls
+- Multi-level undo/redo history
+- Save image to file (currently clipboard only)
+- Move/resize existing shapes after drawing
+- Advanced zoom and pan controls
 - Multiple layers support
-- Additional shapes (lines, freehand)
-- Keyboard shortcuts
+- Additional shapes (lines, freehand drawing)
+- More blur strength options
 
 ## 📝 License
 
