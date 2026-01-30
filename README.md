@@ -93,8 +93,6 @@ Highlight/
 │   ├── ArrowShape.cs         # Arrow shapes
 │   └── TextShape.cs          # Text annotations
 ├── Views/
-│   ├── TextDialog.xaml       # Text input dialog (legacy)
-│   ├── TextDialog.xaml.cs
 │   ├── HelpDialog.xaml       # Help dialog
 │   └── HelpDialog.xaml.cs
 └── Converters/

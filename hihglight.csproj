@@ -87,10 +87,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\TextDialog.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Views\HelpDialog.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -110,9 +106,6 @@
     <Compile Include="Models\RectangleShape.cs" />
     <Compile Include="Models\ArrowShape.cs" />
     <Compile Include="Models\TextShape.cs" />
-    <Compile Include="Views\TextDialog.xaml.cs">
-      <DependentUpon>TextDialog.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\HelpDialog.xaml.cs">
       <DependentUpon>HelpDialog.xaml</DependentUpon>
     </Compile>
