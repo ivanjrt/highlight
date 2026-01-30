@@ -95,8 +95,6 @@ Highlight/
 ├── Views/
 │   ├── HelpDialog.xaml       # Help dialog
 │   └── HelpDialog.xaml.cs
-└── Converters/
-    └── EnumToBooleanConverter.cs  # Data binding converters
 ```
 
 ## 🎨 UI Features

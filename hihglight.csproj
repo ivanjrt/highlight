@@ -109,7 +109,6 @@
     <Compile Include="Views\HelpDialog.xaml.cs">
       <DependentUpon>HelpDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converters\EnumToBooleanConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
